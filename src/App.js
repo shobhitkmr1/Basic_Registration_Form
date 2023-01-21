@@ -37,6 +37,7 @@ export default function App() {
           placeholder="First Name"
           name="firstName"
         />
+        {submitted &&  !values.firstName ? <span>Please enter a frist name</span> : null}
         <input
           onChange={handleLastName}
           value={values.lastName}
@@ -46,6 +47,7 @@ export default function App() {
           placeholder="Last Name"
           name="lastName"
         />
+        {submitted &&  !values.lastName ? <span>Please enter a frist name</span> : null}
         <input
           onChange={handleEmail}
           value={values.email}
@@ -55,10 +57,11 @@ export default function App() {
           placeholder="Email"
           name="email"
         />
+        {submitted &&  !values.email ? <span>Please enter a frist name</span> : null}
         <button class="form-field" type="submit">
           Register
         </button>
-        {submitted ? (
+        {submitted && valid? (
           <div className="success-message">Success! Thanku for Register</div>
         ) : null}
       </form>
