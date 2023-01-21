@@ -1,13 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-container {
+  width: 360px;
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container {
+  color: black;
+}
+.register-form {
+  color: black;
+}
+
+input {
+  background: #f2f2f2;
+}
+
+.form-container {
+  box-shadow: 0 0 20px 0 rgba(255,255,255,0.2), 0 5px 5px 0 rgba(255,255,255,0.24);
+}
+
+
+.success-message {
+  font-family: "Roboto", sans-serif;
+  background-color: #3f89f8;
+  padding: 15px;
+  color: white;
+}
+
+.form-field {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+input {
+  background: #f2f2f2;
+}
+
+.error {
+  border-style: solid;
+  border: 2px solid #ffa4a4;
+}
+
+/* button {
+  background: #a1a1a1;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b3b3b3;
+}
+
+button:active {
+  background: #999999;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+  transform: translateY(3px);
+}
+
+ */
+
+
+/* new change ----------------------------------------------- */
+
+button {
+  background: linear-gradient(to bottom, #c0c0c0, #b3b3b3);
+  color: rgb(80, 64, 64);
+  cursor: pointer;
+}
+
+button {
+  background: #c0c0c0;
+  color: rgb(80, 64, 64);
+  cursor: pointer;
+  border: 2px solid #c0c0c0;
+  transition: border-color 0.2s ease-in-out;
+}
+
+button:hover {
+  border-color: #b3b3b3;
+}
+
+button {
+  background: #c0c0c0;
+  color: rgb(80, 64, 64);
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #c0c0c0;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 5px 10px #b3b3b3;
+}
+
+
+/* Input Effect */
+
+body input::-webkit-input-placeholder {
+  color: gray;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+body input:focus::-webkit-input-placeholder {
+  color: #c2c2c2;
+  font-size: 10px;
+  transform: translateY(-10px);
 }
